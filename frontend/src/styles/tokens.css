@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Design Tokens & System Foundation — High-End Executive Workbench
+   Transfer-Aware AI Interview Coach
+   Dark Theme (Obsidian & Crisp Monolith) & Light Theme (Editorial Slate & Charcoal)
+   ========================================================================== */
+
+:root {
+  /* ========================================================================
+     DEFAULT: Neutral Obsidian/Charcoal Dark Theme (Linear / Vercel / Stripe)
+     ======================================================================== */
+  --canvas-bg: #090a0f;
+  --surface-base: #111217;
+  --surface-card: #16171d;
+  --surface-raised: #1e1f26;
+  --surface-overlay: #262732;
+  --surface-highlight: rgba(255, 255, 255, 0.05);
+
+  /* Precise Hairline Structural Borders */
+  --border-subtle: #232530;
+  --border-card: #2c2e3c;
+  --border-medium: #3a3d4e;
+  --border-strong: #4f5369;
+  --border-accent: #3b82f6;
+  --border-hover: #4f5369;
+  --border-focus: #e2e8f0;
+
+  /* Typography / Text Colors */
+  --text-primary: #f4f4f7;
+  --text-secondary: #a0a3b3;
+  --text-tertiary: #6e7182;
+  --text-muted: #4e5160;
+  --text-dim: #383a45;
+  --text-disabled: #2a2c35;
+  --text-inverse: #090a0f;
+
+  /* Primary Action Inversion (Monolithic High-End Treatment) */
+  --btn-primary-bg: #f8fafc;
+  --btn-primary-text: #090a0f;
+  --btn-primary-border: #f8fafc;
+  --btn-primary-hover: #e2e8f0;
+
+  /* Avatar & Neutral Identity */
+  --avatar-bg: #22242f;
+  --avatar-text: #f4f4f7;
+  --avatar-border: #333647;
+
+  /* Brand Subtle / Restrained Accent */
+  --brand-primary: #3b82f6;
+  --brand-hover: #60a5fa;
+  --brand-subtle: rgba(59, 130, 246, 0.10);
+  --brand-gradient: #3b82f6;
+  --brand-gradient-hover: #60a5fa;
+
+  /* Semantic State Colors (Controlled, Low-saturation) */
+  --color-success: #10b981;
+  --color-success-bg: rgba(16, 185, 129, 0.10);
+  --color-success-border: rgba(16, 185, 129, 0.25);
+
+  --color-warning: #f59e0b;
+  --color-warning-bg: rgba(245, 158, 11, 0.10);
+  --color-warning-border: rgba(245, 158, 11, 0.25);
+
+  --color-danger: #ef4444;
+  --color-danger-bg: rgba(239, 68, 68, 0.10);
+  --color-danger-border: rgba(239, 68, 68, 0.25);
+
+  --color-info: #0ea5e9;
+  --color-info-bg: rgba(14, 165, 233, 0.10);
+  --color-info-border: rgba(14, 165, 233, 0.25);
+
+  /* Transfer Taxonomy Accents */
+  --transfer-l0: #64748b;
+  --transfer-l1: #475569;
+  --transfer-l2: #334155;
+  --transfer-l3: #3b82f6;
+  --transfer-l4: #2563eb;
+  --transfer-l5: #10b981;
+
+  /* Typography Hierarchy */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Moderate, Consistent Corner Radii (Max 6px - No Pillowy Rounding) */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 6px;
+  --radius-xl: 6px;
+  --radius-2xl: 6px;
+  --radius-full: 6px;
+
+  /* Subtle Minimal Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 2px 5px rgba(0, 0, 0, 0.40);
+  --shadow-glow: none;
+
+  /* Minimal Transitions */
+  --duration-fast: 100ms;
+  --duration-normal: 150ms;
+  --duration-slow: 200ms;
+  --ease-standard: ease;
+  --ease-bounce: ease;
+}
+
+/* ==========================================================================
+   LIGHT THEME (:root[data-theme="light"])
+   Editorial Slate & Deep Obsidian Charcoal (Stripe / Linear / Apple Developer)
+   ========================================================================== */
+:root[data-theme="light"] {
+  --canvas-bg: #f8f9fa;
+  --surface-base: #ffffff;
+  --surface-card: #ffffff;
+  --surface-raised: #f1f3f7;
+  --surface-overlay: #e5e8ef;
+  --surface-highlight: rgba(0, 0, 0, 0.02);
+
+  /* Hairline Crisp Borders */
+  --border-subtle: #e5e7eb;
+  --border-card: #d9dce3;
+  --border-medium: #c2c6d2;
+  --border-strong: #9ca3af;
+  --border-accent: #0f172a;
+  --border-hover: #9ca3af;
+  --border-focus: #0f172a;
+
+  /* Typography / Text Colors (High Contrast, Deep Charcoal) */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #64748b;
+  --text-muted: #94a3b8;
+  --text-dim: #cbd5e1;
+  --text-disabled: #cbd5e1;
+  --text-inverse: #ffffff;
+
+  /* Primary Action Inversion (Deep Obsidian Charcoal with White Text) */
+  --btn-primary-bg: #0f172a;
+  --btn-primary-text: #ffffff;
+  --btn-primary-border: #0f172a;
+  --btn-primary-hover: #1e293b;
+
+  /* Avatar & Neutral Identity */
+  --avatar-bg: #e2e8f0;
+  --avatar-text: #0f172a;
+  --avatar-border: #cbd5e1;
+
+  /* Brand Subtle / Restrained Accent */
+  --brand-primary: #0f172a;
+  --brand-hover: #1e293b;
+  --brand-subtle: #f1f5f9;
+  --brand-gradient: #0f172a;
+  --brand-gradient-hover: #1e293b;
+
+  /* Semantic State Colors (Controlled, Muted) */
+  --color-success: #059669;
+  --color-success-bg: #ecfdf5;
+  --color-success-border: #a7f3d0;
+
+  --color-warning: #d97706;
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #fde68a;
+
+  --color-danger: #dc2626;
+  --color-danger-bg: #fef2f2;
+  --color-danger-border: #fecaca;
+
+  --color-info: #0284c7;
+  --color-info-bg: #f0f9ff;
+  --color-info-border: #bae6fd;
+
+  --transfer-l0: #94a3b8;
+  --transfer-l1: #64748b;
+  --transfer-l2: #475569;
+  --transfer-l3: #0f172a;
+  --transfer-l4: #1e293b;
+  --transfer-l5: #059669;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 2px 5px rgba(0, 0, 0, 0.08);
+}

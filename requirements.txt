@@ -1,0 +1,42 @@
+# AI Interview Coach - Python Dependencies
+# Option A: Gemini LLM + Local Hugging Face Embeddings
+
+# Web Framework
+fastapi>=0.126.0
+uvicorn[standard]>=0.38.0
+python-multipart>=0.0.21
+
+# Settings & Validation
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+email-validator>=2.0.0
+python-dotenv>=1.0.1
+
+# Database
+sqlalchemy>=2.0.0
+asyncpg
+psycopg2-binary
+pgvector
+aiosqlite
+
+# AI - LLM (Primary: Google Gemini - Free API)
+google-genai
+
+# AI - Embeddings (Free: Local Hugging Face)
+sentence-transformers
+
+# Resume Parsers
+pdfplumber
+pypdf>=3.0.0
+python-docx
+
+# Utils
+passlib[bcrypt]
+python-jose[cryptography]
+httpx>=0.27.0
+openai>=1.12.0
+anthropic>=0.18.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

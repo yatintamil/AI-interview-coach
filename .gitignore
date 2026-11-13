@@ -1,0 +1,58 @@
+# Environments
+.venv/
+venv/
+env/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Databases & backups
+*.db
+*.db.bak
+*.db.master_backup
+database_backups/
+
+# Node & Frontend builds
+node_modules/
+dist/
+build/
+.npm/
+
+# Scratch & temporary files
+scratch/
+screenshots/
+*.log
+
+# Exclude Tests, Docs, Research & Reports
+tests/
+docs/
+research/
+scripts/
+.agents/
+frontend/src/__tests__/
+frontend/*.cjs
+*.cjs
+pytest.ini
+inspect_db_schema.py
+VALIDATION_PLAN_*.md
+*_report.json
+*_results.json
+active_models.json
+acceptance_profiling_results.json
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.kilo/
+.vscode/
